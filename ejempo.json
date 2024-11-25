@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "admin",
+      "username": "admin",
+      "password": "admin123",
+      "phone": "5584789865",
+      "email": "admin@gmail.com",
+      "status": 1,
+      "isUser": false,
+      "createAt": "05/05/2024",
+      "updateAt": "06/07/2024"
+    }
+  ]
+}

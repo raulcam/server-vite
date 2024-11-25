@@ -1,17 +1,39 @@
-const express = require('express');
-const jwt = require('jsonwebtoken');
-const router = express.Router();
+import express from "express";
+import jwt from "jsonwebtoken";
 
-router.post('/', async (req, res) => {
-  const { email, password } = req.body;
+const authRouter = express.Router();
+const SECRET_KEY = "mySecretKey123";
 
-  // Validación simple
-  if (email === 'admin@test.com' && password === 'password') {
-    const token = jwt.sign({ email }, 'secret', { expiresIn: '1h' });
-    return res.json({ token });
+authRouter.post("/login", async (req, res) => {
+  const { username, password } = req.body;
+  const { db } = req;
+  
+
+  //Verifica credenciales
+  const user = db.data.users.find(
+    (item) => item.username === username && item.password === password
+  );
+
+  if (!user) {
+    return res.status(401).json({
+      message: "Credenciales invalidas",
+    });
   }
 
-  res.status(401).send('Invalid credentials');
+  const token = jwt.sign(
+    {
+      id: user.id,
+      username: user.username,
+    },
+    SECRET_KEY,
+    {
+      expiresIn: "5h",
+    }
+  );
+
+  res.json({
+    token,
+  });
 });
 
-module.exports = router;
+export default authRouter;

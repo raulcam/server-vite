@@ -1,0 +1,96 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "rulo",
+      "username": "rulo",
+      "password": "123",
+      "phone": "5584789865",
+      "email": "admin@gmail.com",
+      "status": 1,
+      "isUser": false,
+      "createAt": "05/05/2024",
+      "updateAt": "06/07/2024"
+    },
+    {
+      "id": 2,
+      "name": "kar",
+      "username": "karen",
+      "password": "mami69",
+      "createdAt": "2024-11-25T16:34:47.966Z",
+      "phone": "5584789865",
+      "email": "admin@gmail.com",
+      "status": 1,
+      "isUser": false,
+      "updateAt": "06/07/2024"
+    },
+    {
+      "id": 3,
+      "name": "Marlene",
+      "phone": "",
+      "email": "",
+      "isUser": false,
+      "username": "mar",
+      "password": "mar123456",
+      "createdAt": "2024-11-25T17:16:03.532Z",
+      "updateAt": "2024-11-25T17:16:03.532Z"
+    },
+    {
+      "id": 4,
+      "name": "Celia",
+      "phone": "",
+      "email": "",
+      "isUser": false,
+      "username": "celia",
+      "password": "celia123456",
+      "createdAt": "2024-11-25T17:16:42.215Z",
+      "updateAt": "2024-11-25T17:16:42.215Z"
+    },
+    {
+      "id": 5,
+      "name": "Roberto",
+      "phone": "",
+      "email": "",
+      "isUser": false,
+      "username": "robert",
+      "password": "123",
+      "createdAt": "2024-11-25T17:16:58.182Z",
+      "updateAt": "2024-11-25T17:16:58.182Z"
+    },
+    {
+      "id": 6,
+      "name": "Chuchio",
+      "phone": "",
+      "email": "",
+      "isUser": false,
+      "username": "chucho",
+      "password": "123",
+      "createdAt": "2024-11-25T17:17:13.215Z",
+      "updateAt": "2024-11-25T17:17:13.215Z"
+    },
+    {
+      "id": 7,
+      "name": "rulo",
+      "phone": "5584789865",
+      "email": "admin@gmail.com",
+      "isUser": true,
+      "username": "rulo",
+      "password": "123",
+      "status": 1,
+      "createdAt": "2024-11-25T17:17:55.766Z",
+      "updateAt": "2024-11-25T17:17:55.766Z"
+    },
+    {
+      "id": 8,
+      "name": "PEpe",
+      "phone": "5584789865",
+      "email": "admin@gmail.com",
+      "isUser": true,
+      "username": "pepe",
+      "password": "123",
+      "status": 1,
+      "createdAt": "2024-11-25T17:18:12.482Z",
+      "updateAt": "2024-11-25T17:18:12.482Z"
+    }
+  ]
+}

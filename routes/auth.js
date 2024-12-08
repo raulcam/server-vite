@@ -5,14 +5,20 @@ const authRouter = express.Router();
 const SECRET_KEY = "mySecretKey123";
 
 authRouter.post("/login", async (req, res) => {
-  const { username, password } = req.body;
+  const { email, password } = req.body;
   const { db } = req;
   
 
   //Verifica credenciales
   const user = db.data.users.find(
-    (item) => item.username === username && item.password === password
+    (item) => item.email === email && item.password === password
   );
+
+  if (!email.includes('@')) {
+    return res.status(401).json({
+      message:'No es un correo'
+    })
+  }
 
   if (!user) {
     return res.status(401).json({
@@ -23,7 +29,7 @@ authRouter.post("/login", async (req, res) => {
   const token = jwt.sign(
     {
       id: user.id,
-      username: user.username,
+      email: user.email,
     },
     SECRET_KEY,
     {

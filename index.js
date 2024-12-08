@@ -1,6 +1,5 @@
 import express from "express";
 import cors from "cors";
-import bodyParser from "body-parser";
 import { join } from "path";
 import { JSONFile } from "lowdb/node";
 import { JSONFilePreset } from "lowdb/node";
@@ -9,7 +8,7 @@ import usersRoutes from "./routes/users.js";
 
 const app = express();
 
-//Importante para checar el puerto desde el front
+//TODO Importante para checar el puerto desde el front
 app.use(
   cors({
     origin: "http://localhost:5173",
@@ -17,16 +16,16 @@ app.use(
   })
 );
 
-app.use(bodyParser.json());
+app.use(express.json());
 
-//Configuration de LowDB
+//TODO Configuration de LowDB
 const file = join(process.cwd(), "db.json");
 const adapter = new JSONFile(file);
 
-// const defaultData = { users: [] }
+//Base de datos de lowDB ruta /db.json
 const db = await JSONFilePreset("db.json", adapter);
 
-//Inicializar base de datos
+//TODO Inicializar base de datos
 async function initialBD() {
   await db.read();
   if (!db.data) {
@@ -37,7 +36,8 @@ async function initialBD() {
 
 initialBD();
 
-//Rutas
+//TODO Rutas
+
 
 app.use(
   "/auth",

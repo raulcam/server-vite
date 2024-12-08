@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "name": "rulo",
+      "name": "guapo",
       "username": "rulo",
       "password": "123",
       "phone": "5584789865",
@@ -11,18 +11,6 @@
       "isUser": false,
       "createAt": "05/05/2024",
       "updateAt": "06/07/2024"
-    },
-    {
-      "id": 3,
-      "name": "Marlene",
-      "phone": "5578452312",
-      "email": "mar@gmail.com",
-      "isUser": false,
-      "username": "mar",
-      "password": "mar123456",
-      "status": 1,
-      "createdAt": "2024-11-25T17:16:03.532Z",
-      "updateAt": "2024-11-25T17:16:03.532Z"
     },
     {
       "id": 4,
@@ -50,7 +38,7 @@
     },
     {
       "id": 6,
-      "name": "honter",
+      "name": "hola",
       "phone": "5584789865",
       "email": "admin@gmail.com",
       "isUser": true,
@@ -83,6 +71,42 @@
       "status": 1,
       "createdAt": "2024-11-26T00:31:56.725Z",
       "updateAt": "2024-11-26T00:31:56.725Z"
+    },
+    {
+      "id": 9,
+      "name": "we",
+      "phone": "5584789865",
+      "email": "admin@gmail.com",
+      "isUser": true,
+      "username": "er",
+      "password": "123sfsf",
+      "status": 1,
+      "createdAt": "2024-11-26T00:48:17.319Z",
+      "updateAt": "2024-11-26T00:48:17.319Z"
+    },
+    {
+      "id": 10,
+      "name": "we",
+      "phone": "5584789865",
+      "email": "admin@gmail.com",
+      "isUser": true,
+      "username": "er",
+      "password": "123sfsf",
+      "status": 1,
+      "createdAt": "2024-11-26T00:48:23.609Z",
+      "updateAt": "2024-11-26T00:48:23.609Z"
+    },
+    {
+      "id": 11,
+      "name": "test123456789",
+      "phone": "5584789865",
+      "email": "",
+      "isUser": true,
+      "username": "test",
+      "password": "123sfsf",
+      "status": 1,
+      "createdAt": "2024-12-02T00:19:41.163Z",
+      "updateAt": "2024-12-02T00:19:41.163Z"
     }
   ]
 }
